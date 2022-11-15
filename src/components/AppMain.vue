@@ -1,10 +1,10 @@
 <script>
-import ListActors from "../components/ListActors.vue";
+import ListActors from "./ListActors.vue";
 export default {
     name: `AppMain`,
     components: {
         ListActors
-    },
+    }
 }
 </script>
 
@@ -23,6 +23,7 @@ export default {
             <div class="alert dark" role="alert">
                 <strong>Found 62</strong> Characters
             </div>
+
             <ListActors></ListActors>
 
         </div>

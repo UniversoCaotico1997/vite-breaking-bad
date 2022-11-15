@@ -1,10 +1,10 @@
 <script>
 import { store } from '../assets/js/store';
-import Actors from "./Actor.vue";
+import Actor from "./Actor.vue";
 export default {
     name: `ListActors`,
     components: {
-        Actors
+        Actor
     },
     data() {
         return {
@@ -18,7 +18,7 @@ export default {
 
     <section class="list_actors">
         <div class="row row-cols-5">
-            <Actors v-for="item in store.characters" :item="item"></Actors>
+            <Actor v-for="item in store.characters" :item="item"></Actor>
         </div>
     </section>
 

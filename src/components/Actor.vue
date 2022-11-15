@@ -1,18 +1,16 @@
 <script>
 export default {
     name: `Actor`,
-    data() {
-        props: {
-            item: Object
-        }
-
+    props: {
+        item: Object
     }
+
 }
 </script>
 
 <template>
     <div class="actor">
-        <div class="col g-4 " v-for="item in store.characters">
+        <div class="col g-4">
             <div class="card p-3">
                 <img :src="item.img" class="card-img-top" alt="">
                 <div class="card-body text-center">
