@@ -5,10 +5,11 @@ export default {
 </script>
 
 <template>
-
-
+    <header>
+        <h1>Breaking Bad Api</h1>
+    </header>
 </template>
 
 <style lang="scss" scoped>
-@use "../assets/scss/variabels/AppHeader.scss";
+
 </style>
