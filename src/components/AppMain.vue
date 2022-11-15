@@ -1,24 +1,16 @@
 <script>
-import { store } from '../assets/js/store';
 import ListActors from "../components/ListActors.vue";
 export default {
     name: `AppMain`,
-    ListActors,
-    data() {
-        return {
-            store
-        }
-
-    }
-
-
+    components: {
+        ListActors
+    },
 }
 </script>
 
 <template>
 
     <main>
-
         <div class="filter container">
             <select class="">
                 <option value="">Select category</option>
@@ -31,6 +23,7 @@ export default {
             <div class="alert dark" role="alert">
                 <strong>Found 62</strong> Characters
             </div>
+            <ListActors></ListActors>
 
         </div>
     </main>
